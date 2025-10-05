@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>InfoCusto - Sempre Inovando</title>
+<style>
+    /* Reset básico */
+    * {margin: 0; padding: 0; box-sizing: border-box; font-family: 'Arial', sans-serif;}
+    
+    body {
+        background: linear-gradient(135deg, #1e3c72, #2a5298, #6a11cb, #2575fc);
+        background-size: 400% 400%;
+        animation: gradientBG 15s ease infinite;
+        color: #fff;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    @keyframes gradientBG {
+        0%{background-position:0% 50%;}
+        50%{background-position:100% 50%;}
+        100%{background-position:0% 50%;}
+    }
+
+    header {
+        text-align: center;
+        margin-bottom: 40px;
+        animation: fadeIn 2s ease forwards;
+    }
+
+    header h1 {
+        font-size: 3rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-bottom: 10px;
+        background: linear-gradient(to right, #ff512f, #dd2476);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    header p {
+        font-size: 1.2rem;
+        color: #f0f0f0;
+        opacity: 0.9;
+    }
+
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        max-width: 1200px;
+        width: 100%;
+    }
+
+    .card {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        border-radius: 15px;
+        padding: 30px 20px;
+        width: 250px;
+        text-align: center;
+        transition: transform 0.3s, box-shadow 0.3s;
+        cursor: pointer;
+    }
+
+    .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    }
+
+    .card h2 {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+        color: #ffdd59;
+    }
+
+    .card p {
+        font-size: 1rem;
+        color: #fff;
+        opacity: 0.85;
+    }
+
+    footer {
+        margin-top: 50px;
+        text-align: center;
+        font-size: 0.9rem;
+        color: #ccc;
+    }
+
+    /* Responsividade */
+    @media(max-width: 768px) {
+        header h1 {font-size: 2.5rem;}
+        .card {width: 90%;}
+    }
+
+    @media(max-width: 480px) {
+        header h1 {font-size: 2rem;}
+        header p {font-size: 1rem;}
+    }
+
+    /* Animação de fadeIn */
+    @keyframes fadeIn {
+        from {opacity: 0; transform: translateY(-20px);}
+        to {opacity: 1; transform: translateY(0);}
+    }
+</style>
+</head>
+<body>
+    <header>
+        <h1>InfoCusto</h1>
+        <p>Sempre inovando e trazendo o melhor para você!</p>
+    </header>
+
+    <main>
+        <div class="card">
+            <h2>Inovação</h2>
+            <p>Ideias novas e soluções criativas para cada desafio.</p>
+        </div>
+        <div class="card">
+            <h2>Transparência</h2>
+            <p>Informações claras e objetivas, sem complicações.</p>
+        </div>
+        <div class="card">
+            <h2>Eficiência</h2>
+            <p>Resultados rápidos e precisos para otimizar seu tempo.</p>
+        </div>
+        <div class="card">
+            <h2>Conectividade</h2>
+            <p>Sempre conectado com as melhores tecnologias do mercado.</p>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2025 InfoCusto. Todos os direitos reservados.
+    </footer>
+</body>
+</html>
